@@ -12,8 +12,6 @@ args = sys.argv
 
 csv_data = pd.read_csv(args[1])
 
-#csv_data = pd.read_csv("./log/20200629_1658.csv")
-
 time_data = np.array(csv_data[["time"]])
 time_data = time_data.flatten()
 Freq_data = np.array(csv_data[["Frequency"]])
